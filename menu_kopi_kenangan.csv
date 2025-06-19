@@ -1,0 +1,53 @@
+Nama Menu,Komposisi,Harga,Tipe,Rasa Manis,Ada Susu,Ada Kopi,Ada Boba,Favorit
+Americano,"Espresso, Air Mineral",18000,Kopi,Tidak,Tidak,Ya,Tidak,Tidak
+Avocado Coffee,"Espresso, Susu, Alpukat",34000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Cappuccino,"Espresso, Susu Steamed, Buih Susu",24000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Caramel Latte,"Espresso, Susu, Sirup Caramel",28000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Choco Marshmallow,"Susu, Cokelat, Topping Marshmallow",26000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Cloud Caramel Macchiato,"Espresso, Susu, Sirup Caramel",28000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Dua Shot Iced Shaken,"Double Espresso",28000,Kopi,Tidak,Tidak,Ya,Tidak,Tidak
+Hazelnut Latte,"Espresso, Vanilla, Susu, Sirup Hazelnut",28000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Kenangan Mantan CEO,"Kopi, Susu, Gula Aren",29000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Kopi Kenangan Mantan,"Kopi, Susu, Gula Aren",22000,Kopi,Ya,Ya,Ya,Tidak,Ya
+Kopi Susu Black Aren,"Kopi, Susu, Gula Aren",23000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Latte,"Espresso, Susu Steamed",24000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Matcha Espresso,"Espresso, Susu, Bubuk Matcha",28000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Toasted Coconut Americano,"Espresso, Air Mineral, Sirup Kelapa Panggang",29000,Kopi,Ya,Tidak,Ya,Tidak,Tidak
+Toasted Coconut Latte,"Espresso, Susu, Sirup Kelapa Panggang",31000,Kopi,Ya,Ya,Ya,Tidak,Tidak
+Oatside Boba Gula Aren,"Susu Oatside, Gula Aren, Boba",27000,Oatside,Ya,Ya,Tidak,Ya,Tidak
+Oatside Kopi Kenangan Mantan,"Kopi Susu Oatside, Gula Aren",25000,Oatside,Ya,Ya,Ya,Tidak,Tidak
+Oatside Latte,"Espresso, Susu Oatside Steamed",27000,Oatside,Ya,Ya,Ya,Tidak,Tidak
+Oatside Matcha Latte,"Susu Oatside, Bubuk Matcha",27000,Oatside,Ya,Ya,Tidak,Tidak,Tidak
+Freezy Dutch Chocolate,"Ice Blended Cokelat, Susu",33000,Freezy,Ya,Ya,Tidak,Tidak,Tidak
+Freezy Kopi Kenangan Mantan,"Ice Blended Kopi Susu, Gula Aren",28000,Freezy,Ya,Ya,Ya,Tidak,Tidak
+Freezy Mocha Latte,"Ice Blended Cokelat, Espresso",35000,Freezy,Ya,Ya,Ya,Tidak,Tidak
+Frezzy Latte,"Ice Blended Espresso, Susu",30000,Freezy,Ya,Ya,Ya,Tidak,Tidak
+Frezzy Matcha Latte,"Ice Blended Matcha, Susu",30000,Freezy,Ya,Ya,Tidak,Tidak,Tidak
+Frezzy Toasted Coconut Latte,"Ice Blended Kopi, Susu, Sirup Kelapa Panggang",33000,Freezy,Ya,Ya,Ya,Tidak,Tidak
+Avocado Caramel,"Alpukat, Susu, Saus Caramel",30000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Avocado Milk,"Alpukat, Susu",26000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Caramel Dutch Choco,"Susu, Cokelat Asli, Caramel",31000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Dutch Chocolate,"Cokelat Asli, Susu Creamy",26000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Hazelnut Choco Milk Tea,"Susu, Coklat Hazelnut, Milk Tea",23000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Hazelnut Dutch Choco,"Hazelnut, Susu, Cokelat Asli",31000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Kenangan Milk Tea,"Milk Tea",19000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Matcha Latte,"Susu Segar, Bubuk Matcha",24000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Milk Tea Boba,"Teh Hitam, Boba, Susu",25000,Non-Kopi,Ya,Ya,Tidak,Ya,Tidak
+Milo Dinosaurus,"Susu Milo, Topping Milo Bubuk",22000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Oreo Shake,"Remah Oreo, Susu Vanilla",26000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Raspberry Hibiscus,"Teh Raspberry, Hibiscus, Lemon",20000,Non-Kopi,Ya,Tidak,Tidak,Tidak,Tidak
+Susu Boba Gula Aren,"Susu, Boba, Gula Aren",24000,Non-Kopi,Ya,Ya,Tidak,Ya,Tidak
+Susu Grass Jelly,"Susu, Gula aren, Topping Cincau",24000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Thai Green Tea,"Teh Thailand Hijau, Susu",23000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Thai Tea,"Teh Thailand, Susu",22000,Non-Kopi,Ya,Ya,Tidak,Tidak,Tidak
+Pasal 1,"Kopi Kenangan Mantan Regular, Roti Coklat Klasik",30000,Paket,Ya,Ya,Ya,Tidak,Tidak
+Pasal 2,"Americano, Roti Srikaya",31000,Paket,Ya,Tidak,Ya,Tidak,Tidak
+Pasal 3,"Oatside Latte, Roti Keju Manis",34000,Paket,Ya,Ya,Ya,Tidak,Tidak
+Pasal 4,"Milo Dinosaurus, Roti Srikaya",35000,Paket,Ya,Ya,Tidak,Tidak,Tidak
+Friend Chip Cookie,"Cookie",19000,Camilan,Ya,Tidak,Tidak,Tidak,Tidak
+Join The Dark Side Cookie,"Cookie",29000,Camilan,Ya,Tidak,Tidak,Tidak,Tidak
+Mr. Hazelnut Cookie,"Cookie",29000,Camilan,Ya,Tidak,Tidak,Tidak,Tidak
+Red Velvet Madness Cookie,"Cookie",25000,Camilan,Ya,Tidak,Tidak,Tidak,Tidak
+Roti Coklat Klasik,"Roti, Coklat",12000,Camilan,Ya,Tidak,Tidak,Tidak,Tidak
+Roti Keju Manis,"Roti, Keju",15000,Camilan,Ya,Tidak,Tidak,Tidak,Tidak
+Roti Susu Manis,"Roti, Susu",12000,Camilan,Ya,Ya,Tidak,Tidak,Tidak
