@@ -98,7 +98,6 @@ with st.form("quiz"):
         tipe_kepribadian = st.selectbox("Tipe Kepribadian", ["Santai", "Sibuk dan Produktif", "Petualang", "Pemikir", "Romantis", "Ambisius", "Humoris", "Introvert", "Ekstrovert", "Perfeksionis"])
         manis = st.slider("Seberapa suka rasa manis?", 1, 5, 3, format="%d", help="1=Tidak Suka, 5=Sangat Suka")
         malam = st.slider("Seberapa aktif di malam hari?", 1, 5, 3, format="%d", help="1=Jarang, 5=Selalu")
-        ekonomi = st.selectbox("Preferensi Ekonomi", ["Ekonomis", "Standar", "Premium"])
     with col2:
         nongkrong = st.slider("Seberapa suka nongkrong di cafe?", 1, 5, 3, format="%d", help="1=Tidak Suka, 5=Sangat Suka")
         kreatif = st.slider("Seberapa kreatif kamu?", 1, 5, 3, format="%d", help="1=Tidak Kreatif, 5=Sangat Kreatif")
@@ -139,14 +138,6 @@ def mapping_kepribadian_to_menu(tipe_kepribadian, manis, malam, nongkrong, kreat
         "Favorit": favorit
     }
 
-def filter_ekonomi(df, ekonomi):
-    if ekonomi == "Ekonomis":
-        return df[df["Harga"] <= 23000]
-    elif ekonomi == "Standar":
-        return df[(df["Harga"] > 23000) & (df["Harga"] <= 29000)]
-    else:
-        return df[df["Harga"] > 29000]
-
 if submitted:
     fitur_menu = mapping_kepribadian_to_menu(tipe_kepribadian, manis, malam, nongkrong, kreatif)
     input_df = pd.DataFrame([fitur_menu])
@@ -155,22 +146,20 @@ if submitted:
         if column in encoders:
             input_encoded[column] = encoders[column].transform(input_df[column])
 
-    # Filter dataset sesuai preferensi ekonomi
-    filtered_data = filter_ekonomi(data, ekonomi)
-    filtered_encoded = data_encoded.loc[filtered_data.index]
-    # Prediksi hanya pada subset data yang sesuai ekonomi
-    if not filtered_encoded.empty:
-        X_filtered = filtered_encoded.drop(["Nama Menu", "Komposisi", "Harga"], axis=1)
-        model_filtered = KNeighborsClassifier(n_neighbors=3)
-        model_filtered.fit(X_filtered, filtered_encoded["Nama Menu"])
-        pred = model_filtered.predict(input_encoded)[0]
+    # Tidak ada filter dataset berdasarkan ekonomi, gunakan seluruh data
+    # Prediksi pada seluruh data
+    if not data_encoded.empty:
+        X_all = data_encoded.drop(["Nama Menu", "Komposisi", "Harga"], axis=1)
+        model_all = KNeighborsClassifier(n_neighbors=3)
+        model_all.fit(X_all, data_encoded["Nama Menu"])
+        pred = model_all.predict(input_encoded)[0]
         result = label_mapping[pred]
         harga = data.loc[data["Nama Menu"] == result, "Harga"].values[0]
         komposisi = data.loc[data["Nama Menu"] == result, "Komposisi"].values[0]
         st.success(f"🎉 Rekomendasi menu untukmu: **{result}**\n\nHarga: Rp{harga:,}\nKomposisi: {komposisi}")
         st.balloons()
     else:
-        st.warning("Tidak ada menu yang sesuai dengan preferensi ekonomi kamu!")
+        st.warning("Tidak ada menu yang tersedia!")
 
     st.markdown("---")
     st.markdown("### 📊 Statistik Menu")
@@ -179,6 +168,6 @@ if submitted:
 
     st.markdown("Dataset menu diambil dari menu_kopi_kenangan.csv!")
     st.markdown("---")
-    st.info("✨ Coba kepribadian atau preferensi ekonomi lain untuk rekomendasi berbeda!")
+    st.info("✨ Coba kepribadian lain untuk rekomendasi berbeda!")
 
 st.markdown('<div class="footer">©2025 Ali Purnama | <b>@Universitas Pelita Bangsa</b></div>', unsafe_allow_html=True)
